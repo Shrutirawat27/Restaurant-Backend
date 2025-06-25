@@ -1,5 +1,4 @@
 require('dotenv').config();
-// console.log("Loaded JWT_SECRET:", process.env.JWT_SECRET);
 const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
@@ -27,8 +26,8 @@ const upload = multer({ storage });
 
 // MongoDB connection
 mongoose.connect(process.env.MONGO_URI)
-  .then(() => console.log('✅ MongoDB connected'))
-  .catch(err => console.error('❌ MongoDB error:', err));
+  .then(() => console.log('MongoDB connected'))
+  .catch(err => console.error('MongoDB error:', err));
 
 // Public API - Get all dishes
 app.get('/api/dishes', async (req, res) => {
@@ -59,7 +58,7 @@ app.post('/api/admin/dishes', auth, upload.single('image'), async (req, res) => 
    // Convert special to boolean
   const isSpecial = special === "true";
 
-  // 🔴 Validate image required if it's a special dish
+  // Validate image required if it's a special dish
   if (isSpecial && !req.file) {
     return res.status(400).json({ message: "Image is required for special dishes." });
   }
@@ -96,5 +95,5 @@ app.delete('/api/admin/dishes/:id', auth, async (req, res) => {
 });
 
 app.listen(PORT, '0.0.0.0', () => {
-  console.log(`🚀 Server running at http://0.0.0.0:${PORT}`);
+  console.log(`Server running at http://0.0.0.0:${PORT}`);
 });
