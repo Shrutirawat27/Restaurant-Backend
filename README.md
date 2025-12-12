@@ -1,12 +1,71 @@
-# React + Vite
+# Zaika Restaurant Website
+A modern and responsive restaurant website that showcases menu items, allows online ordering, and provides information about the restaurant. Built using React for frontend and Node.js/Express with MongoDB for the backend.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Live Demo
+https://www.zaika.us.com/
 
-Currently, two official plugins are available:
+## Features
+- Browse restaurant menu and categories  
+- Online ordering and cart management  
+- Responsive and mobile-friendly design  
+- Admin features for managing menu items and orders  
+- Clean and intuitive user interface  
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Screenshot
+![Web Page Screenshot](assets/Restaurantinterface.png)  
 
-## Expanding the ESLint configuration
+## Technologies Used
+### Frontend
+- React.js  
+- Vite  
+- Tailwind CSS  
+- JavaScript    
+- Vercel Deployment  
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Backend
+- Node.js  
+- Express.js  
+- MongoDB  
+- Mongoose  
+- JWT Authentication  
+
+## Folder Structure
+### frontend/
+- public/  
+- src/  
+  - assets/  
+  - components/  
+  - pages/  
+  - App.jsx  
+  - index.css  
+  - main.jsx  
+- index.html  
+- package.json  
+- tailwind.config.js  
+- vite.config.js  
+
+### backend/
+- assets/  
+- config/  
+- middleware/  
+- models/  
+- package.json  
+- server.js  
+
+## How to Use
+1. Visit the live website  
+2. Browse menu items and categories  
+3. Add items to cart and place an order  
+4. Admin can manage menu and orders  
+
+## What I Learned
+- Full-stack development with React and Node.js  
+- Connecting frontend with backend APIs  
+- Managing database operations with MongoDB  
+- Component-based UI design with React  
+- Responsive layouts using Tailwind CSS  
+- Handling deployment for frontend and backend  
+
+## Author
+**Shruti Rawat**<br>
+Web Developer
